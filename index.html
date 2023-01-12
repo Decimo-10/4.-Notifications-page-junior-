@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | notifs page</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__title">Notifications <span class="header__notif-number">3</span></h1>
+    <p tabindex="1" class="header__mark-read">Mark all as read</p>
+  </header>
+
+  <main class="main">
+    <article class="notif notif--unread">
+    <img src="assets/images/avatar-mark-webber.webp" alt="Mark Webber" class="notif__profile-img">
+      <h2 class="notif__reason"><a href="#" class="notif__name">Mark Webber</a> reacted to your recent post <a href="#" class="notif__link">My first tournament today!</a><span class="notif__point"></span></h2>
+      <p class="notif__time">1m ago</p>
+    </article>
+    <article class="notif notif--unread">
+      <img src="assets/images/avatar-angela-gray.webp" alt="Angela Gray" class="notif__profile-img">
+      <h2 class="notif__reason"><a href="#" class="notif__name">Angela Gray</a> followed you<span class="notif__point"></span></h2>
+      <p class="notif__time">5m ago</p>
+    </article>
+    <article class="notif notif--unread">
+      <img src="assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson" class="notif__profile-img">
+      <h2 class="notif__reason"><a href="#" class="notif__name">Jacob Thompson</a> has joined your group <a href="#" class="notif__link notif__link--group-name">Chess Club</a><span class="notif__point"></span></h2>
+      <p class="notif__time">1 day ago</p>
+    </article>
+    <article class="notif">
+      <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin" class="notif__profile-img">
+      <h2 class="notif__reason"><a href="#" class="notif__name">Rizky Hasanuddin</a> sent you a private message</h2>
+      <p class="notif__time">5 days ago</p>
+      <p class="notif__message">
+        Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+        I'm already having lots of fun and improving my game.
+      </p>
+    </article>
+    <article class="notif notif--with-image">
+      <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith" class="notif__profile-img">
+      <h2 class="notif__reason"><a href="#" class="notif__name">Kimberly Smith</a> commented on your picture</h2>
+      <img src="assets/images/image-chess.webp" alt="Chessboard with girl in background" class="notif__img">
+      <p class="notif__time">1 week ago</p>
+    </article>
+    <article class="notif">
+      <img src="assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson" class="notif__profile-img">
+      <h2 class="notif__reason"><a href="#" class="notif__name">Nathan Peterson</a> reacted to your recent post <a href="#" class="notif__link">5 end-game strategies to increase your win rate</a></h2>
+      <p class="notif__time">2 weeks ago</p>
+    </article>
+    <article class="notif">
+      <img src="assets/images/avatar-anna-kim.webp" alt="Anna Kim" class="notif__profile-img">
+      <h2 class="notif__reason">
+        <a href="#" class="notif__name">Anna Kim</a> 
+        left the group 
+        <a href="#" class="notif__link notif__link--group-name">Chess Club</a>
+      </h2>
+      <p class="notif__time">2 weeks ago</p>
+    </article>
+  </main>
+  
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+</body>
+</html>
+
