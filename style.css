@@ -31,14 +31,14 @@ footer{
 }
 .header__title{
     color:hsl(224, 21%, 14%);
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 .header__notif-number{
     display: inline-block;
     margin-left: 5px;
     padding: 3px 10px;
-    font-size: 0.66em;
+    font-size: 1rem;
     color: hsl(0, 0%, 100%);
     background-color: hsl(219, 85%, 26%);
     border-radius: 5px;
@@ -53,7 +53,8 @@ footer{
 .notif{
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);/* The third row is needed because of the comment in the fourth notification. I could have made a modifier class for that alone but since the size is set to "auto" the 
+                                            empty third rows in the other notifications are not visible. */
     gap: 0 15px;
     margin: 10px 0;
     padding: 10px;
@@ -73,7 +74,6 @@ footer{
 }
 .notif__time{
     margin: 5px 0 0 0;
-    
     color: hsl(219, 14%, 63%);
 }
 .notif--with-image{
@@ -112,7 +112,7 @@ footer{
     max-width: 40px;
 }
 .notif__img:is(:hover,:focus){
-    outline: 3px solid hsl(211, 68%, 94%);
+    outline: 3px solid hsl(211, 68%, 94%);/* Used outline instead of border, so that the element below the image doesn't jump down 1px every time you hover on the img. */
     border-radius: 5px;
 }
 
