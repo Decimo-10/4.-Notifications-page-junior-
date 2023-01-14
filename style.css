@@ -43,6 +43,12 @@ footer{
     background-color: hsl(219, 85%, 26%);
     border-radius: 5px;
 }
+.header__mark-read{
+    background-color: initial;
+    border:none;
+    color:  hsl(219, 12%, 42%);
+    font-weight: 500;
+}
 .header__mark-read:is(:hover, :focus){
     color: hsl(219, 85%, 26%);
     cursor:pointer;
